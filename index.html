@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pattern Library / Style Guide</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/screen.min.css">
+  <link rel="stylesheet" href="css/global.css">
+
+  <!-- This space intentionally left blank. Put your custom web-served fonts here -->
+</head>
+
+<body>
+  
+  <div class="patterns__site">
+
+  <header class="patterns__header">
+		<h1><span>Cronofy</span> Style Guide</h1>
+		<p>This is a styleguide/pattern library with styled elements and shortcodes for the <a href="https://www.cronofy.com/">Cronofy</a> website.</p>
+  </header>
+
+  <nav class="patterns__nav col-extra-light">
+    <ul>
+      
+        <li><a href="#alerts">alerts</a></li>
+      
+        <li><a href="#blockquotes">blockquotes</a></li>
+      
+        <li><a href="#buttons">buttons</a></li>
+      
+        <li><a href="#colours">colours</a></li>
+      
+        <li><a href="#fonts">fonts</a></li>
+      
+        <li><a href="#form-fields">form-fields</a></li>
+      
+        <li><a href="#gravity-forms">gravity-forms</a></li>
+      
+        <li><a href="#lists">lists</a></li>
+      
+        <li><a href="#preformated-text">preformated-text</a></li>
+      
+        <li><a href="#tables">tables</a></li>
+      
+        <li><a href="#testimonial-excerpt">testimonial-excerpt</a></li>
+      
+        <li><a href="#testimonial-full">testimonial-full</a></li>
+      
+        <li><a href="#testimonial">testimonial</a></li>
+      
+        <li><a href="#twitter">twitter</a></li>
+      
+        <li><a href="#typography">typography</a></li>
+      
+    </ul>
+  </nav>
+
+
+  
+  <section id="alerts" class="pattern">
+    <header>
+      <h2>alerts</h2>
+    </header>
+    <div class="pattern__style">
+      <h4>Shortcode</h4>
+<pre><code>[alert_box]Text goes here.[/alert_box]</code></pre>
+<div class="alert_box">This is a box to alert the visitor to something important. You can insert these in any content box using this shortcode structure.</div>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="blockquotes" class="pattern">
+    <header>
+      <h2>blockquotes</h2>
+    </header>
+    <div class="pattern__style">
+      <blockquote>
+  <p>Some sort of famous witty quote marked up with a <code>blockquote</code> and a child <code>p</code> element.</p>
+</blockquote>
+
+<blockquote>Even better philosophical quote marked up with just a <code>blockquote</code> element.</blockquote>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="buttons" class="pattern">
+    <header>
+      <h2>buttons</h2>
+    </header>
+    <div class="pattern__style">
+      <h4>Shortcode</h4>
+<pre><code>[button colour=".." url="... the page url ..."]</code>Button text<code>[/button]</code></pre>
+<h4>Choice of colour values:</h4>
+<pre><code>lightblue, darkgreen, lightbrown, darkbrown, orange, yellow</code></pre>
+
+<p>
+  <a class="button button--lightblue " href="#"><span>Light blue button</span></a>
+  <a class="button button--darkgreen " href="#"><span>Dark green button</span></a>
+  <a class="button button--lightbrown " href="#"><span>Light brown button</span></a>
+  <a class="button button--darkbrown " href="#"><span>Dark brown button</span></a>
+  <a class="button button--orange " href="#"><span>Orange button</span></a>
+  <a class="button button--yellow " href="#"><span>Yellow button</span></a>
+</p>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="colours" class="pattern">
+    <header>
+      <h2>colours</h2>
+    </header>
+    <div class="pattern__style">
+      <h3>Main colours</h3>
+<div class="colour">
+  <code>$col-page</code>
+  <span class="colour__animated">#f5f3f2</span>
+  <span class="colour__swatch col-page"></span>
+</div>
+<div class="colour">
+  <code>$col-text</code>
+  <span class="colour__animated">#5a554d</span>
+  <span class="colour__swatch col-text"></span>
+</div>
+<div class="colour">
+  <code>$col-border</code>
+  <span class="colour__animated">#ccc</span>
+  <span class="colour__swatch col-border"></span>
+</div>
+<div class="colour">
+  <code>$col-reverse-btn</code>
+  <span class="colour__animated">#000</span>
+  <span class="colour__swatch col-reverse-btn"></span>
+</div>
+
+<h3>Main support colours</h3>
+<div class="colour">
+  <code>$col-light</code>
+  <span class="colour__animated">#f5f3f2</span>
+  <span class="colour__swatch col-light"></span>
+</div>
+<div class="colour">
+  <code>$col-dark</code>
+  <span class="colour__animated">#5a554d</span>
+  <span class="colour__swatch col-dark"></span>
+</div>
+<div class="colour">
+  <code>$col-white</code>
+  <span class="colour__animated">#fff</span>
+  <span class="colour__swatch col-white"></span>
+</div>
+<div class="colour">
+  <code>$col-page-lighter</code>
+  <span class="colour__animated">#f8f7f6</span>
+  <span class="colour__swatch col-page-lighter"></span>
+</div>
+
+<div class="colour">
+  <code>$col-extra-light</code>
+  <span class="colour__animated">#d4cfca</span>
+  <span class="colour__swatch col-extra-light"></span>
+</div>
+<div class="colour">
+  <code>$col-extra-lighter</code>
+  <span class="colour__animated">#e1ddda</span>
+  <span class="colour__swatch col-extra-lighter"></span>
+</div>
+<div class="colour">
+  <code>$col-extra-dark</code>
+  <span class="colour__animated">#b3a79e</span>
+  <span class="colour__swatch col-extra-dark"></span>
+</div>
+<div class="colour">
+  <code>$col-extra-darker</code>
+  <span class="colour__animated">#958b83</span>
+  <span class="colour__swatch col-extra-darker"></span>
+</div>
+
+<h3>Cronofy colours</h3>
+<div class="colour">
+  <code>$col-cronofy-lightbrown</code>
+  <span class="colour__animated">#a3978c</span>
+  <span class="colour__swatch col-cronofy-lightbrown"></span>
+</div>
+
+<div class="colour">
+  <code>$col-cronofy-brown</code>
+  <span class="colour__animated">#5a554d</span>
+  <span class="colour__swatch col-cronofy-brown"></span>
+</div>
+
+<div class="colour">
+  <code>$col-cronofy-blue</code>
+  <span class="colour__animated">#49bed8</span>
+  <span class="colour__swatch col-cronofy-blue"></span>
+</div>
+
+<div class="colour">
+  <code>$col-cronofy-blue-hover</code>
+  <span class="colour__animated">#76CFE2</span>
+  <span class="colour__swatch col-cronofy-blue-hover"></span>
+</div>
+
+<div class="colour">
+  <code>$col-cronofy-seagreen</code>
+  <span class="colour__animated">#2e787d</span>
+  <span class="colour__swatch col-cronofy-seagreen"></span>
+</div>
+
+<div class="colour">
+  <code>$col-cronofy-seagreen-hover</code>
+  <span class="colour__animated">#65999E</span>
+  <span class="colour__swatch col-cronofy-seagreen-hover"></span>
+</div>
+
+<h3>Extra button colours</h3>
+<div class="colour">
+  <code>$col-cronofy-accent</code>
+  <span class="colour__animated">#ffc100</span>
+  <span class="colour__swatch col-cronofy-accent"></span>
+</div>
+
+<div class="colour">
+  <code>$col-cronofy-accent-hover</code>
+  <span class="colour__animated">#ecb400</span>
+  <span class="colour__swatch col-cronofy-accent-hover"></span>
+</div>
+
+<div class="colour">
+  <code>$col-cronofy-landing</code>
+  <span class="colour__animated">#d35400</span>
+  <span class="colour__swatch col-cronofy-landing"></span>
+</div>
+
+<div class="colour">
+  <code>$col-cronofy-landing-hover</code>
+  <span class="colour__animated">#de7f3f</span>
+  <span class="colour__swatch col-cronofy-landing-hover"></span>
+</div>
+
+<h3>Miscellaneous</h3>
+<div class="colour">
+  <code>$col-required</code>
+  <span class="colour__animated">#c7254e</span>
+  <span class="colour__swatch col-required"></span>
+</div>
+<div class="colour">
+  <code>$col-optional</code>
+  <span class="colour__animated">#17be7c</span>
+  <span class="colour__swatch col-optional"></span>
+</div>
+<div class="colour">
+  <code>$col-google</code>
+  <span class="colour__animated">#dd4c39</span>
+  <span class="colour__swatch col-google"></span>
+</div>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="fonts" class="pattern">
+    <header>
+      <h2>fonts</h2>
+    </header>
+    <div class="pattern__style">
+      <p>All the fonts are SASS mixins. Use the SASS @include in CSS to assign a font to an element.</p>
+
+<code>font-body()</code>
+<p class="typeface__light">"FFDINWebLight", Helvetica, Arial, sans-serif;</p>
+
+<code>font-italic()</code>
+<p class="typeface__italic">"FFDINWebItalic", Helvetica, Arial, sans-serif;</p>
+
+<code>font-bold()</code>
+<p class="typeface__bold">"FFDINWebProBold", Helvetica, Arial, sans-serif;</p>
+
+<code>font-code()</code>
+<p class="typeface__code">Monaco, Menlo, Monaco, Consolas, 'Courier New', monospace;</p>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="form-fields" class="pattern">
+    <header>
+      <h2>form-fields</h2>
+    </header>
+    <div class="pattern__style">
+      <form>
+  <p><label>Text input</label> <input type="text"></p>
+  <p><label>Text input with placeholder</label> <input type="text" placeholder="I'm placeholder text"></p>
+  <p><label>Required input <span class="required">*</span></label> <input type="text" required></p>
+
+  <p><label>Textarea</label> <textarea cols="30" rows="5" >Textarea text</textarea></p>
+
+  <p><label>Select field</label>
+  <select>
+      <option>Option 01</option>
+      <option>Option 02</option>
+  </select></p>
+
+  <p><label><input type="radio" name="rad"> Radio input</label>
+  <p><label><input type="checkbox"> Checkbox input</label></p>
+
+  <p><input type="submit" value="Submit"></p>
+</form>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="gravity-forms" class="pattern">
+    <header>
+      <h2>gravity-forms</h2>
+    </header>
+    <div class="pattern__style">
+      <h3 class="pattern__title">Adding a regular Gravity Form</h3>
+<p>The <code>title</code> and <code>description</code> attributes are optional. If you don't add them, they will default to <code>false</code> and not appear.</p>
+<pre><code>[gravityform id="" title="true" description="true"]</code></pre>
+
+<h3 class="pattern__title">Adding a Popup Gravity Form</h3>
+<p>If you are adding a Gravity Form in the Popup Maker you need to add <code>ajax="true"</code> to the shortcode</p>
+<pre><code>[gravityform id="" title="true" description="true" ajax="true"]</code></pre>
+
+<h3 class="pattern__title">Adding a coloured background to a Gravity Form</h3>
+<p>You need to surround the Gravity Form shortcode with the <code>[gravity_form_box]...[/gravity_form_box]</code> shortcode.</p>
+<p>If you want to add a column of text alongside the form include the <code>[column_text]...[/column_text]</code> shortcode inside the box shortcode. The <code>[column_text]</code> shortcode should always appear before the Gravity Form shortcode. Please.</p>
+<pre><code>[gravity_form_box background="" button=""][column_text]...Text to use...[/column_text][gravityform id="" title="true" description="true"][/gravity_form_box]</code></pre>
+<h4>Choice of background values</h4>
+<pre><code>lightblue, darkgreen, lightbrown, darkbrown, orange, yellow, swirls</code></pre>
+<h4>Choice of button colour values</h4>
+<pre><code>lightblue, darkgreen, lightbrown, darkbrown, orange, yellow</code></pre>
+<h4>Example</h4>
+<div class="gravity_form_box lightbrown button--lightblue">
+  <div class="columns-half">
+    <h3>Title above the text</h3>
+    <p>This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form. This text should sit alongside the form.</p>
+  </div>
+  <div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_2">
+    <form method="post" enctype="multipart/form-data" id="gform_2" action="">
+      <div class="gform_heading">
+        <span class="gform_description"></span>
+      </div>
+      <div class="gform_body">
+          <ul id="gform_fields_2" class="gform_fields top_label form_sublabel_below description_below">
+            <li id="field_2_1" class="gfield field_sublabel_below field_description_below">
+              <label class="gfield_label" for="input_2_1">Your email</label>
+              <div class="ginput_container ginput_container_email">
+                <input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1">
+              </div>
+            </li>
+            <li id="field_2_2" class="gfield field_sublabel_below field_description_below">
+              <label class="gfield_label" for="input_2_2">How can we help?</label>
+              <div class="ginput_container ginput_container_textarea">
+                <textarea name="input_2" id="input_2_2" class="textarea medium" tabindex="2" rows="10" cols="50"></textarea>
+              </div>
+            </li>
+          </ul>
+      </div>
+      <div class="gform_footer top_label">
+        <input type="submit" id="gform_submit_button_2" class="gform_button button" value="Send" tabindex="3" onclick="">
+      </div>
+    </form>
+  </div>
+</div>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="lists" class="pattern">
+    <header>
+      <h2>lists</h2>
+    </header>
+    <div class="pattern__style">
+      <h3>Ordered List</h3>
+<ol>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+    <ol>
+      <li>Ut wisi enim ad minim veniam.</li>
+      <li>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</li>
+    </ol>
+  </li>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</li>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</li>
+</ol>
+
+<h3>Un-ordered List</h3>
+<ul>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetuer adipiscing elit</li>
+  <li>Sed diam nonummy nibh</li>
+  <li>Euismod tincidunt ut laoreet dolore</li>
+  <li>Magna aliquam erat volutpat</li>
+</ul>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="preformated-text" class="pattern">
+    <header>
+      <h2>preformated-text</h2>
+    </header>
+    <div class="pattern__style">
+      <pre>
+P R E F O R M A T T E D T E X T
+! " # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~
+</pre>
+
+<h3>Pre Code</h3>
+<pre><code>&lt;html>
+  &lt;head>
+  &lt;/head>
+  &lt;body>
+      &lt;div class="main"> &lt;div>
+  &lt;/body>
+&lt;/html></code></pre>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="tables" class="pattern">
+    <header>
+      <h2>tables</h2>
+    </header>
+    <div class="pattern__style">
+      <table>
+  <thead>
+    <tr>
+      <th>Type of dried grape</th>
+      <th>Fresh colour</th>
+      <th>Dry colour</th>
+      <th>Seeds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Raisin</td>
+      <td>white</td>
+      <td>dark</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Sultana</td>
+      <td>white</td>
+      <td>golden</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Currant</td>
+      <td>black</td>
+      <td>dark</td>
+      <td>no</td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="testimonial-excerpt" class="pattern">
+    <header>
+      <h2>testimonial-excerpt</h2>
+    </header>
+    <div class="pattern__style">
+      <h4>Shortcode</h4>
+<p>Use the shortcode to display the testimonial and add the .excerpt class in the style section.</p>
+<p>An excerpt testimonial will float on the right hand side in a content module when the viewport is wide enough. For this to work you'll need to put the shortcode in front of the content you want to float on the left.</p>
+<pre><code>[testimonial id="" style="excerpt"] The text you want to float on the left of the testimonial follows the shortcode.</code></pre>
+<blockquote class="testimonial testimonial__excerpt">
+  <img src="images/testimonial-author.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Billy Jones" />
+  <p>Working with Cronofy to provide our customers with two-way calendar sync was really efficient. The API is consistent and well documented and the support is first class. They even added a feature to fit our needs!</p>
+  <p class="testimonial__author">&mdash; Billy Jones, Lead Developer, Appointedd</p>
+</blockquote><!-- .content__testimonial -->
+<p>The text you want to float on the left of the testimonial follows after the shortcode in the markup. When viewports are wide enough the testimonial will sit on the right and the text on the left. When viewports are too narrow for two columns, the testimonial will come first because it sits first in the source order.</p>
+<blockquote class="testimonial testimonial__excerpt">
+  <img src="images/testimonial-author.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Billy Jones" />
+  <p>One line.</p>
+  <p class="testimonial__author">&mdash; Billy Jones, Lead Developer, Appointedd</p>
+</blockquote><!-- .content__testimonial -->
+<p>The text you want to float on the left of the testimonial follows after the shortcode in the markup. When viewports are wide enough the testimonial will sit on the right and the text on the left. When viewports are too narrow for two columns, the testimonial will come first because it sits first in the source order.</p>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="testimonial-full" class="pattern">
+    <header>
+      <h2>testimonial-full</h2>
+    </header>
+    <div class="pattern__style">
+      <h4>Shortcode</h4>
+<p>Use the shortcode to display the testimonial and add the .full class in the style section.</p>
+<pre><code>[testimonial id="" style="full"]</code></pre>
+
+<blockquote class="testimonial testimonial__full">
+  <img src="images/testimonial-author.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Billy Jones" />
+  <p>Working with Cronofy to provide our customers with two-way calendar sync was really efficient. The API is consistent and well documented and the support is first class. They even added a feature to fit our needs!</p>
+  <p class="testimonial__author">&mdash; Billy Jones, Lead Developer, Appointedd</p>
+</blockquote><!-- .content__testimonial -->
+
+<blockquote class="testimonial testimonial__full">
+  <img src="images/testimonial-author.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Billy Jones" />
+  <p>One line.</p>
+  <p class="testimonial__author">&mdash; Billy Jones, Lead Developer, Appointedd</p>
+</blockquote><!-- .content__testimonial -->
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="testimonial" class="pattern">
+    <header>
+      <h2>testimonial</h2>
+    </header>
+    <div class="pattern__style">
+      <p>This is an additional content box you can add to a page.</p>
+<section class="testimonial">
+  <div class="wrapper">
+    <blockquote class="testimonial__block">
+      <img src="images/testimonial-author.jpg" alt="Derek Edwards">
+      <p class="testimonial__quote">&ldquo;The Cronofy API allowed us to add calendar sync support to our platform in a fraction of the time it would have taken to build support for separate protocols.&rdquo;</p>
+      <p class="testimonial__author">
+        <a href="">&mdash; Derek Edwards, Co-founder &amp; CTO, CoachLogix</a>
+      </p>
+    </blockquote>
+  </div><!-- .wrapper -->
+</section><!-- /.testimonial -->
+
+<section class="testimonial">
+  <div class="wrapper">
+    <blockquote class="testimonial__block">
+      <img src="images/testimonial-author.jpg" alt="Derek Edwards">
+      <p class="testimonial__quote">&ldquo;One line.</p>
+      <p class="testimonial__author">
+        <a href="">&mdash; Derek Edwards, Co-founder &amp; CTO, CoachLogix</a>
+      </p>
+    </blockquote>
+  </div><!-- .wrapper -->
+</section><!-- /.testimonial -->
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="twitter" class="pattern">
+    <header>
+      <h2>twitter</h2>
+    </header>
+    <div class="pattern__style">
+      <h4>Shortcode</h4>
+<pre><code>[twitter id=""]</code></pre>
+<p>Use the post id of the twitter post you would like to use.</p>
+<div class="content__tweet">
+	<a class="tweet__meta" href="https://twitter.com/adomokos/status/642866556314193920" rel="nofollow" style="border-bottom-style: none;">
+		<svg aria-hidden="true" class="svg__icon">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
+		</svg>
+		<img src="https://d1kwv30jm1b7sr.cloudfront.net/2016/05/23154912/attila.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Attila Domokos">
+		<span class="tweet__name">Attila Domokos</span>
+		<span class="tweet__handle">@adomokos</span>
+	</a>
+	<div class="tweet__text">
+		<p>@cronofy is a great calendar integration platform. Check out their Evernote connector, it's very convincing.</p>
+	</div>
+	<p class="tweet__date">
+		<a href="https://twitter.com/adomokos/status/642866556314193920" rel="nofollow">13 Sep 2015</a>
+	</p>
+</div>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+  <section id="typography" class="pattern">
+    <header>
+      <h2>typography</h2>
+    </header>
+    <div class="pattern__style">
+      <div class="module-text">
+  <h1>The page title is always H1</h1>
+  <p class="pattern__info">H1: FFDINWebLight, font-size 40px, line-height 1, uppercase</p>
+  <h2>A 2nd level heading</h2>
+  <p class="pattern__info">H2: FFDINWebLight, font-size 32px, line-height 1.3</p>
+  <p>This is the highest heading you can choose when adding content to pages.</p>
+  <h3>A 3rd level heading</h3>
+  <p class="pattern__info">H3: FFDINWebLight, font-size 22px, line-height 1.5, uppercase, letter-spacing 1px</p>
+  <p>Some paragraph text to fill up the gap. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h4>A 4th level heading</h4>
+  <p class="pattern__info">H4: FFDINWebProBold, font-size 20px, line-height 1.8</p>
+  <p>Some paragraph text to fill up the gap. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  <h5>A 5th level heading</h5>
+  <p class="pattern__info">H5: FFDINWebProBold, font-size 14px, line-height 1.8, uppercase, letter-spacing 1px, $col-extra-dark</p>
+  <p>For when you get down to the nitty gritty.</p>
+  <h6>A 6th level heading</h6>
+  <p class="pattern__info">H6: FFDINWebProBold, font-size 12px, line-height 1.8, uppercase, letter-spacing 1px, $col-cronofy-blue</p>
+  <p>This should only be used for extremely detailed stuff. The kind of stuff only die hard people would still be around to read.</p>
+  <p>This is a paragraph of text. Some of the text may be <em>emphasised</em> and some of it might even be <strong>strongly emphasised</strong>. Occasionally <a href="#">a link</a> may appear in the text. The average paragraph contains five or six sentences although some may contain as little or one or two while others carry on for anything up to ten sentences and beyond.</p>
+  <p class="pattern__info">P: FFDINWebLight, font-size 18px, line-height 1.5</p>
+</div>
+
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  
+
+</div><!-- .patterns__site -->
+
+
+</body>
+</html>
